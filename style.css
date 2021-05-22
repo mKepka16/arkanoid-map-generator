@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI Regular';
+  color: #fff;
+  letter-spacing: 0.1rem;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #333;
+  font-size: 1.6rem;
+}
+
+canvas {
+  cursor: pointer;
+  background-color: rgb(91, 123, 228);
+}
+
+.split {
+  display: flex;
+  gap: 2rem;
+}
+
+.container {
+  justify-content: center;
+  margin: 2rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+.bgBar__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.arrow {
+  background-color: rgb(91, 123, 228);
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  background-color: rgb(71, 103, 208);
+}
+
+.leftArrow i {
+  position: relative;
+  left: -0.2rem;
+}
+
+.rightArrow i {
+  position: relative;
+  left: 0.2rem;
+}
+
+.bgCanvas {
+  cursor: default;
+}
+
+.leftBar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

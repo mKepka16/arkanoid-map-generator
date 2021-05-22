@@ -1,0 +1,27 @@
+.contextMenu {
+  position: absolute;
+  background-color: aliceblue;
+  top: 40%;
+  left: 40%;
+  border: 1px solid #777;
+  -webkit-box-shadow: 0px 3px 10px -3px #000000;
+  box-shadow: 0px 3px 10px -3px #000000;
+  display: none;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.row:hover {
+  background-color: #eee;
+  transition: all 0.1s ease-in-out;
+}
+
+.row div {
+  color: #333;
+}

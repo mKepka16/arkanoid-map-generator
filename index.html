@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arkanoid - board generator</title>
+    <script
+      src="https://kit.fontawesome.com/a000c72c78.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" type="module" defer></script>
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="checkbox.css" />
+    <link rel="stylesheet" href="contextMenu.css" />
+  </head>
+  <body>
+    <div class="split center container">
+      <div class="leftBar">
+        <div class="blocksBar">
+          <h2>Blocks</h2>
+          <canvas class="blocksCanvas"></canvas>
+        </div>
+
+        <div class="bgBar">
+          <h2>Background</h2>
+          <div class="bgBar__container">
+            <div class="leftArrow arrow"><i class="fas fa-caret-left"></i></div>
+            <canvas class="bgCanvas" width="100" height="100"></canvas>
+            <div class="rightArrow arrow">
+              <i class="fas fa-caret-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="settings">
+          <h2>Settings</h2>
+          <div class="checkbox">
+            <label class="checkbox__label">
+              Grid visibility
+              <input
+                type="checkbox"
+                class="checkbox__input"
+                id="gridCheckbox"
+              />
+              <span class="checkbox__checkmark"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="board">
+        <h2>Board</h2>
+        <canvas class="boardCanvas"></canvas>
+      </div>
+    </div>
+
+    <div class="contextMenu">
+      <div class="row undo">
+        <div>Undo</div>
+        <div>Ctrl+Z</div>
+      </div>
+      <div class="row redo">
+        <div>Redo</div>
+        <div>Ctrl+Y</div>
+      </div>
+      <div class="row delete">
+        <div>Delete</div>
+        <div>Del</div>
+      </div>
+      <hr />
+      <div class="row saveToFile">
+        <div>Save to file</div>
+        <div>Ctrl+S</div>
+      </div>
+      <div class="row loadFromFile">
+        <div>Load data from file</div>
+        <div>Ctrl+L</div>
+      </div>
+    </div>
+  </body>
+</html>
