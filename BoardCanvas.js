@@ -109,7 +109,7 @@ class BoardCanvas extends GridCanvas {
   handleKeyDown(e) {
     e.preventDefault();
     if (e.key == 'Delete') return this.fillSelectedCells(null);
-    if (!e.ctrlKey) return;
+    if (!e.ctrlKey && !e.metaKey) return;
     if (e.code == 'KeyZ') return this.undo();
     if (e.code == 'KeyY') return this.redo();
     if (e.code == 'KeyS') return this.saveToFile();
