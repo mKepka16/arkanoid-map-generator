@@ -79,3 +79,12 @@ h2 {
   flex-direction: column;
   gap: 2rem;
 }
+
+ul {
+  margin-left: 2rem;
+}
+
+ul li {
+  margin: 1rem 0;
+  color: rgb(248, 78, 78);
+}
